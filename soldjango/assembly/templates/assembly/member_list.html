@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
+    <table>
+        {% for member in member_list %}
+        <tr>
+            <td>{{member }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+<!-- {% for member in member_list %}
+    {{member }}
+{% endfor %} -->
